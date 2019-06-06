@@ -1,0 +1,66 @@
+﻿@model Fruit.Model.userTable
+
+@{
+    ViewBag.Title = "注册";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<script src="~/Scripts/user.js"></script>
+<div class="container" style="margin-top: 40px;">
+    <div class="col-md-6 col-md-offset-3">
+        <form class="form-horizontal">
+            <div class="page-header">
+                <h3>请完善您的完善个人信息</h3>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">用户名</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputUName" name="userName" placeholder="请输入用户名">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputUPwd" name="userPwd" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">联系方式</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputUTel" name="userTel" placeholder="请输入联系方式">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">邮箱</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputUEmail" name="userEmail" placeholder="请输入邮箱">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">性别</label>
+                <div class="col-sm-10">
+                    <select id="USex" name="userSex" class="form-control">
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">QQ</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputQQ" name="userQQ" placeholder="请输入QQ">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">出生日期</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="date" id="inputTime" name="userTime" />
+                </div>
+            </div>
+            <div class="form-group">
+                <button id="btnReg" type="button" class="form-control btn btn-info">注册</button>
+            </div>
+        </form>
+    </div>
+</div>
+

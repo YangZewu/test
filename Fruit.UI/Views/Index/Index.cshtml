@@ -1,0 +1,186 @@
+﻿@model Fruit.Model.Shopping
+
+@{
+    ViewBag.Title = "首页";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<style>
+    .img01 {
+        width: 100%;
+    }
+</style>
+<script src="~/Scripts/Index.js"></script>
+<div class="jumbotron">
+    <div class="container">
+        <h2>您好！</h2>
+        <p>这是一个水果类的销售平台，我们为您提供各种类型的水果，您可以根据自己的喜好自行选购，如果满意不妨推荐给更多人使用，祝您购物愉快！</p>
+        <button id="ck" class="btn-default btn btn-info">了解更多&raquo;</button>
+    </div>
+</div>
+<div class="container">
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-sz" role="tab" data-toggle="tab">散装水果</a></li>
+        <li><a href="#tab-jz" role="tab" data-toggle="tab">精装水果</a></li>
+        <li><a href="#tab-gz" role="tab" data-toggle="tab">健康果汁</a></li>
+    </ul>
+    <div class="tab-content" style="margin-top:10px;">
+        <div class="tab-pane active" id="tab-sz">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/8.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>樱桃樱桃樱桃。</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/8.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>樱桃樱桃樱桃。</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/8.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>樱桃樱桃樱桃。</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/8.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>樱桃樱桃樱桃。</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/8.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>樱桃樱桃樱桃。</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/8.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>樱桃樱桃樱桃。</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-jz">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/7.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>这里是精装水果</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/7.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>这里是精装水果</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/7.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>这里是精装水果</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/7.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>这里是精装水果</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/7.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>这里是精装水果</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/7.jpg" alt="...">
+                        <h3 style="color:red">¥79.00<small style="color:red">包邮</small></h3>
+                        <p>这里是精装水果</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-gz">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/6.jpg" alt="...">
+                        <h3 style="color:red">¥10.00<small style="color:red">包邮</small></h3>
+                        <p>这里是果汁</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/6.jpg" alt="...">
+                        <h3 style="color:red">¥10.00<small style="color:red">包邮</small></h3>
+                        <p>这里是果汁</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/6.jpg" alt="...">
+                        <h3 style="color:red">¥10.00<small style="color:red">包邮</small></h3>
+                        <p>这里是果汁</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/6.jpg" alt="...">
+                        <h3 style="color:red">¥10.00<small style="color:red">包邮</small></h3>
+                        <p>这里是果汁</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/6.jpg" alt="...">
+                        <h3 style="color:red">¥10.00<small style="color:red">包邮</small></h3>
+                        <p>这里是果汁</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="thumbnail">
+                        <img src="~/Img/6.jpg" alt="...">
+                        <h3 style="color:red">¥10.00<small style="color:red">包邮</small></h3>
+                        <p>这里是果汁</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">平台介绍</h4>
+            </div>
+            <div class="modal-body"><p>随着经济的发展，生活水平显著提高，人们对于农产品的要求也越来越苛刻，水果种植户的数量也在急剧增加。因此，就会出现水果滞销而造成经济损失，这对果农是很不友好的。因此我们团队经过讨论过后决定开发一个销售网站供给果农销售水果，我们可以提供安全检测，给买家一个透明化的水果种植过程和安全保障，并针对不同的水果旺季成熟期提供一定的优惠政策，从而减少因水果滞销而对果农造成的经济损失，可为买家提供趣味水果拼盘组合。</p></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
